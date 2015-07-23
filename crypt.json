@@ -1,0 +1,60 @@
+{
+    "tiles": [
+        {
+            "link": "http://i.imgur.com/bhAVVff.png",
+            "top": "open",
+            "right": "road",
+            "bottom": "open",
+            "left": "road"
+        },
+        {
+            "link": "http://i.imgur.com/H06qt6M.png",
+            "top": "open",
+            "right": "road",
+            "bottom": "road",
+            "left": "road"
+        },
+        {
+            "link": "http://i.imgur.com/Tycrsu3.png",
+            "top": "road",
+            "right": "open",
+            "bottom": "road",
+            "left": "open"
+        },
+        {
+            "link": "http://i.imgur.com/7lK6LzK.png",
+            "top": "road",
+            "right": "road",
+            "bottom": "road",
+            "left": "open"
+        },
+        {
+            "link": "http://i.imgur.com/VyDEjuG.png",
+            "top": "road",
+            "right": "open",
+            "bottom": "road",
+            "left": "road"
+        },
+        {
+            "link": "http://i.imgur.com/b4qMYMU.png",
+            "top": "road",
+            "right": "road",
+            "bottom": "open",
+            "left": "road"
+        },
+        {
+            "link": "http://i.imgur.com/QKGz4e3.png",
+            "top": "open",
+            "right": "open",
+            "bottom": "open",
+            "left": "open"
+        },
+        {
+            "link": "http://i.imgur.com/jLZpRXS.png",
+            "top": "road",
+            "right": "road",
+            "bottom": "road",
+            "left": "road"
+        }
+    ]
+}

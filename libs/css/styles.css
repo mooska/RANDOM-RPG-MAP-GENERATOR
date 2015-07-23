@@ -1,0 +1,67 @@
+html {
+}
+
+body {
+    background-color: #3B3737;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #E8DAB7;
+}
+
+.header {
+    margin: 0;
+    height: 10em;
+    box-sizing: inherit;
+}
+
+.header h1 {
+    margin: 1em 0 0;
+    font-size: 4em;
+    text-shadow: -1px 2px 3px #472D1D;
+}
+
+.center-div {
+}
+
+.center-div > div {
+    display: inline-block;
+    width: 30%;
+}
+
+.center-div form {
+    color: #991818;
+    font-weight: 700;
+    padding-left: 3em;
+    text-align: left;
+}
+
+.center-div form > * {
+    margin: .25em 0;
+    font-size: 1.25rem;
+
+}
+
+.center-div form input,
+.center-div form button {
+    border-radius: 5px;
+    padding-left: 6px;
+    margin: 0;
+    height: 1.1em;
+
+}
+
+.center-div form button{
+    height: 2em;
+    margin-top: 1em; 
+}
+
+.map-display {
+    width: 78%;
+    margin: auto;
+}
+
+.tile {
+    width: 4.85%;
+    margin: -4px;
+    padding: 0;
+} 

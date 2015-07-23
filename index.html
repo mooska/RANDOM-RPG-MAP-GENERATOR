@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Cinzel:900,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="libs/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/chosen.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/styles.css">
+</head>
+
+<body ng-app="mapApp">
+    <div class="wrapper">
+        <div class="header">
+            <h1>RANDOM RPG MAP GENERATOR</h1>
+        </div>
+        <div ng-controller="mapController" class="center-div">
+            <div>
+
+            </div>
+            <div>
+                <h1>Choose your design!</h1>
+                <form action="">
+                    <input ng-model="map.mapName" placeholder="Map Name" class="" type="text"><br>
+                    <select data-placeholder="Biome" class="chosen-select" name="biome">                                   <option value=""></option>
+                        <option value="temple">Temple</option>
+                        <option value="crypt">Crypt</option>
+                    </select><br>
+                    <select data-placeholder="Map-width" class="chosen-select" id="map-width" name="width">
+                        <option value=""></option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select data-placeholder="Map-height" class="chosen-select" id="map-height" name="height">
+                        <option value=""></option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select><br>
+                    <button type="button" class="gen-button">GENERATE MAP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="map-display" ng-controller="mapController2">
+        <h1>{{map.mapName}}</h1>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="libs/js/chosen.jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="libs/js/app.js"></script>
+    <script src="libs/js/scripts.js"></script>
+</body>
+
+</html>
