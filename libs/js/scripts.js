@@ -4,17 +4,16 @@ $(".chosen-select").chosen({
 });
 
 var tiles = [];
-var map = [[], []];
+var map = [];
 var newPiece = {};
+
 
 $.getJSON('crypt.json', function (data) {
     tiles = data.tiles;
 });
 
-function genMap() {
+function genMap(width, height) {
     var eligibleTiles = [];
-    var height = $("#map-height").val();
-    var width = $("#map-width").val();
     console.log(height + " is the height!");
     console.log(width + " is the width!");
     for (i = 0; i < height; i++) {
@@ -65,8 +64,25 @@ function genMap() {
     }
 };
 
-$(".gen-button").click(function () {
+function mapRestyling(width) {
+    var width = $("#map-width").val();
+    if(width === "10") {
+        console.log($(".tile").css("width"));
+        $(".tile").css("width", "10%");
+        console.log($(".tile").css("width"));
+    } else if (width === "20") {
+        $(".tile").css("width", "5%");
+    } else if (width === "30") {
+        $(".tile").css("width", "3.33%");
+    }
+};
+
+$(".gen-button").click(function () {    
+    var width = $("#map-width").val();
+    var height = $("#map-height").val();
     $(".tile").remove();
-    $("br").remove();
-    genMap();
+    $(".map-display br").remove();
+    genMap(width, height);
+    mapRestyling(width);
+
 });
