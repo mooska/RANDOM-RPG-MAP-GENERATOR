@@ -56,12 +56,13 @@ body {
 }
 
 .map-display {
-    width: 88%;
-    margin: auto;
+    width: 58%;
+    margin: 0 auto 3em;;
+    
 }
 
 .tile {
     width: 3.33%;
-    margin: -3px;
+    margin: -3px ;
     padding: 0;
 }
