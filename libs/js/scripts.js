@@ -7,7 +7,6 @@ var tiles = [];
 var map = [];
 var newPiece = {};
 
-
 $.getJSON('crypt.json', function (data) {
     tiles = data.tiles;
 });
@@ -66,12 +65,16 @@ function genMap(width, height) {
 
 function mapRestyling(width) {
     var width = $("#map-width").val();
-    if(width === "10") {
-        console.log($(".tile").css("width"));
+    if(width === "5") {
+        $(".tile").css("width", "20%");
+    } else if(width === "10") {
         $(".tile").css("width", "10%");
-        console.log($(".tile").css("width"));
+    } else if (width === "15") {
+        $(".tile").css("width", "6.66%");
     } else if (width === "20") {
         $(".tile").css("width", "5%");
+    } else if (width === "25") {
+        $(".tile").css("width", "4%");
     } else if (width === "30") {
         $(".tile").css("width", "3.33%");
     }
@@ -83,6 +86,5 @@ $(".gen-button").click(function () {
     $(".tile").remove();
     $(".map-display br").remove();
     genMap(width, height);
-    mapRestyling(width);
-
+    mapRestyling(width)
 });
