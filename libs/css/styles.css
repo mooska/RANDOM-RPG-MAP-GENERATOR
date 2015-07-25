@@ -1,6 +1,3 @@
-html {
-}
-
 body {
     background-color: #3B3737;
     text-align: center;
@@ -20,9 +17,6 @@ body {
     text-shadow: -1px 2px 3px #472D1D;
 }
 
-.center-div {
-}
-
 .center-div > div {
     display: inline-block;
     width: 30%;
@@ -38,7 +32,6 @@ body {
 .center-div form > * {
     margin: .25em 0;
     font-size: 1.25rem;
-
 }
 
 .center-div form input,
@@ -47,7 +40,6 @@ body {
     padding-left: 6px;
     margin: 0;
     height: 1.1em;
-
 }
 
 .center-div form button{
@@ -58,11 +50,10 @@ body {
 .map-display {
     width: 58%;
     margin: 0 auto 3em;
-    
 }
 
 .tile {
     width: 3.33%;
-    margin: -3px 0 ;
+    margin:  0 0 -6px ;
     padding: 0;
 }
