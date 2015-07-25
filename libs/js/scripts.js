@@ -54,7 +54,6 @@ function genMap(width, height) {
             }
         }
     }
-
     for (i = 0; i < height; i++) {
         for (j = 0; j < width; j++) {
             $(".map-display").append('<img src="' + map[i][j].link + '" class="tile">');
