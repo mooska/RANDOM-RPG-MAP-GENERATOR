@@ -26,18 +26,21 @@ body {
 .center-div > div {
     display: inline-block;
     width: 30%;
+    max-width: 500px;
+    margin-left: 38%;
 }
 
 .center-div form {
     color: #991818;
     font-weight: 700;
-    padding-left: 3em;
+    padding-left: 7em;
     text-align: left;
 }
 
 .center-div form > * {
-    margin: .25em 0;
+    margin: .25em ;
     font-size: 1.25rem;
+    width: 12em;
 
 }
 
@@ -45,24 +48,25 @@ body {
 .center-div form button {
     border-radius: 5px;
     padding-left: 6px;
-    margin: 0;
+    margin: 5px;
     height: 1.1em;
-
+    max-width: 500px;
 }
 
 .center-div form button{
     height: 2em;
     margin-top: 1em; 
-}
-
-.map-display {
-    width: 58%;
-    margin: 0 auto 3em;;
+    margin-left: 3%;
     
 }
 
-.tile {
-    width: 3.33%;
-    margin: -3px ;
-    padding: 0;
+.map-display {
+    width: 78%;
+    margin: auto;
 }
+
+.tile {
+    width: 4.85%;
+    margin: -4px;
+    padding: 0;
+} 
